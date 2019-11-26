@@ -40,7 +40,7 @@ end
 def total_gross(source)
     grand_total = 0 
   column_index = 0
-  while column_index < source.size do 
+  while column_index < directors_totals.size do 
     grand_total += directors_totals
     column_index += 1 
   end
