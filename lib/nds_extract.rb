@@ -42,7 +42,7 @@ def total_gross(source)
   column_index = 0
   binding.pry
   while column_index < directors_totals(source).size do 
-    grand_total += directors_totals(source)[:movies][column_index][:worldwide_gross]
+ grand_total += directors_totals(source)[list_of_directors[column_index]]
     column_index += 1 
   end
   return grand_total
