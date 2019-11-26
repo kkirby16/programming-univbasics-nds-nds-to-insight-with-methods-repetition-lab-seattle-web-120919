@@ -40,7 +40,7 @@ end
 def total_gross(source)
     grand_total = 0 
   column_index = 0
-  while column_index < source[:movies].size do 
+  while column_index < list_of_directors(source).size do 
     grand_total += directors_totals(source)
     column_index += 1 
   end
