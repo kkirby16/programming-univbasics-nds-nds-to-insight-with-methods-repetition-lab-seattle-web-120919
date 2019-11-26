@@ -40,7 +40,6 @@ end
 def total_gross(source)
     grand_total = 0 
   column_index = 0
-  binding.pry
   while column_index < directors_totals(source).size do 
     grand_total += directors_totals(source)[:worldwide_gross]
     column_index += 1 
